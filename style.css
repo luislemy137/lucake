@@ -13,6 +13,7 @@ body {
 h1 {
     font-size: 2.5rem;
     font-weight:900;
+  
 }
 header{
     background-color: rgb(240, 232, 230);
@@ -21,9 +22,7 @@ header{
     font-weight: 400;
     padding: 0 6rem;
    
-
 }
-
 .navbar {
     display: flex;
     flex-wrap: wrap;
@@ -35,13 +34,20 @@ header{
     text-decoration: none;
     color: inherit;
 }
-.logo {
+.navbar__list a:hover {
+    background: #d0021b;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+  
+.navbar__logo {
     margin-right: 50px;
 }
-.list{
+.navbar__list{
     list-style: none;
     display: flex;
-    gap: 25px;
+    gap: 3rem;
 }
 #toggler,
 .navbar label {
@@ -49,15 +55,17 @@ header{
     
 }
 main {
-    padding: 1rem 1.5rem;
+   
 }
 
 .main__article {
+    padding: 1rem 1.5rem;
     height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
-   
+    background: rgb(249,243,243);
+    background: linear-gradient(0deg, rgba(249,243,243,1) 2%, rgba(249,208,208,1) 87%);
     
 }
 .main__texto {
@@ -70,8 +78,10 @@ main {
 }
 .main__img {
     width: 30%;
-    text-align: center;
-    
+    text-align: center; 
+}
+.main__img img {
+    border-radius: 5%;
 }
 
 @media screen and (max-width: 600px) {
@@ -112,6 +122,9 @@ main {
        padding: 0;
        overflow: hidden;
    
+    }
+    h1 {
+        padding-bottom: 0.5rem;
     }
     .main__img {
         width: 100%;
@@ -157,6 +170,9 @@ main {
        padding: 0;
        overflow: hidden;
    
+    }
+    h1 {
+        padding-bottom: 0.5rem;
     }
     .main__img {
         width: 100%;
