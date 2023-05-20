@@ -17,7 +17,7 @@ header{
     color: black;
     font-size: 1.5rem;
     font-weight: 400;
-    padding: 0 6rem;
+    padding: 0 6rem;  
 }
 .navbar {
     display: flex;
@@ -32,11 +32,18 @@ header{
 }
 .navbar__logo {
     margin-right: 50px;
+    margin: 0;
 }
 .navbar__list{
     list-style: none;
     display: flex;
     gap: 25px;
+}
+.navbar__list a:hover {
+    background: #d0021b;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 10px;
 }
 #toggler,
 .navbar label {
